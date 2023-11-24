@@ -31,7 +31,7 @@ export const ChatContextProvider = ({ children, user }) => {
 
   // initialize socket
   useEffect(() => {
-    const newSocket = io("http://localhost:3000");
+    const newSocket = io("https://realtime-chat-socket-wpcw.onrender.com");
     setSocket(newSocket);
 
     return () => {
